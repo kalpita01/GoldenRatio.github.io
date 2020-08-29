@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File-->
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	  
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+     <div class="navigation">
+      <ul>
+        <li>
+          <a href="homepage.html">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+            <span class="title">Blog</span>
+          </a>
+        </li>
+        <li>
+          <a href="application.html">
+            <span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+            <span class="title">Application</span>
+          </a>
+        </li>
+        <li>
+          <a href="quiz.html">
+            <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+            <span class="title">Quiz</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+            <span class="title">About us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Javascript for navigation bar -->
+   <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+    	function toggleMenu() {
+    		 let navigation = document.querySelector('.navigation')
+    		 let toggle = document.querySelector('.toggle')
+    		 navigation.classList.toggle('active');
+    		 toggle.classList.toggle('active');
+      }
+    </script>
+    <!-- Javacript ends here -->
+    <div class="page">
+      <!-- Animation Area -->
+      <div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="box">
+        <!-- Content box -->
+        <div class="content">
+          <div class="content1">
+            <!-- Content inside it-->
+						<h1>GOLDEN RATIO</h1>
+            <div class="golden">φ</div>
+            <br>
+						<p style="text-align: left;">The golden ratio <i>(symbol is the Greek letter "phi" shown at left)</i> 
+							is a very special number approximately equal to 1.618</p>
+            <p style="text-align: left;">It appears many times in geometry, art, architecture and other areas.</p>
+          </div>
+            <br>
+          <div class="content-2">
+			      <h2 style="line-height: 180%;">The Idea Behind It</h2><br>
+			      
+                  <p>We  find the golden ratio when we divide a line into two parts so that:</p>
+            <div class="idea">
+									<div>the long part divided by the short part</div>
+									<div><b><i>is also equal to </i></b></div>
+									<div>the whole length divided by the long part</div>
+            </div>
+            <br>
+          </div>
+            <img src="images/pic1.jpeg" alt="golden ratio (a+b)/a = a/b = 1.618..." style="width: 50%; height: 40%;">
+          
+          <br><br>	
+          
+            <h2><b>Beauty</b></h2><br>
+            <img src="images/pic2.jpeg" alt="golden rectangle" style="width:26%; height: 25%;float: left; margin-right:20px;"><br>
+            <div style="padding-top: 20px;">
+              <p>This rectangle has been made using the Golden Ratio, Looks like a typical frame for a painting, doesn't it?</p>
+              <p>Some artists and architects believe the Golden Ratio makes the most pleasing and beautiful shape. </p><br>
+
+                <p>Do you think it is the <b>most pleasing rectangle</b>? </p>
+                      <p>Maybe you do or don't, that is up to you! </p><br><br>
+            </div>
+           
+          
+          <div class="content-4">
+            <p ><img src="images/pic3.jpeg" width="325" height="201" alt="parthenon golden ratio"></p>
+            <p>&nbsp;</p>
+            <p>Many buildings and artworks have 
+              the Golden Ratio in them, such as the Parthenon in Greece, but it is not really known if it was designed that way.</p>
+          </div><br>
+
+          <div class="content-5">
+			      <h2>The Actual Value</h2><br>
+						<p>The Golden Ratio is equal to:</p><br>
+            <p style="color: goldenrod; font-size:25px;"><b>1.61803398874989484820... </b>(etc.)</p><br>
+            <p>The digits just keep on going, with no pattern. In fact the Golden Ratio is known to be an <b>Irrational Number</b>.</p>
+          </div>
+
+
+          <div class="content-6">
+						<h2>Formula</h2><br>
+						<p>We saw  above that the Golden Ratio has this property:</p>
+            <p class="fraction"><sup>a</sup>&frasl;<sub>b</sub> = <sup>a+b</sup>&frasl;<sub>a</sub></p>					
+						<p>We can split the right-hand fraction like this:</p>
+						<p class="fraction"><sup>a</sup>&frasl;<sub>b</sub> = <sup>a</sup>&frasl;<sub>a</sub> + <sup>b</sup>&frasl;<sub>a</sub></p>
+						<p class="fraction"><sup>a</sup>&frasl;<sub>b</sub> is the Golden Ratio <span class="gold">φ</span>, <sup>a</sup>&frasl;<sub>a</sub>=1 and <sup>b</sup>&frasl;<sub>a</sub> = <sup>1</sup>&frasl;<sub><span class="gold">φ</span></sub>, which gets us:</p>
+						
+						
+							<p class="fraction"><span class="gold">φ</span> = 1 + <sup>1</sup>&frasl;<sub><span class="gold">φ</span></sub></p>
+           
+              <p>So the Golden Ratio can be defined in terms of itself!</p>
+              <p>Let us test  it using just a  few digits of accuracy:</p>
+
+              
+              <span class="fraction"><span class="gold">φ</span> = 1 + <sup>1</sup>&frasl;<sub>1.618</sub></span>
+              <p>= 1 + 0.61805...</p>
+              <span>= 1.61805...</span>
+              
+              <p>With more digits we would be more accurate.</p>
+          </div><br>
+					<div class="content-7">
+            <h2>Fibonacci Sequence</h2><br>
+						<p>There is a special relationship between the <b>Golden Ratio</b> and the <b>Fibonacci Sequence</b>:</p>
+		      	<p> <span class="large">0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...</span></p>
+		      	<p class="center">(The next number is found by adding up the two numbers before it.)</p>
+						<p>And here is a surprise: when we take any two successive <i>(one after the other)</i> Fibonacci Numbers, <b>their ratio is very close to the Golden Ratio</b>. </p>
+            <p>In fact, the bigger the pair of Fibonacci Numbers, the closer the approximation. Let us try a few:</p>
+          </div>
+		      	<table style="margin: auto;" >
+							<tr>
+								<td>A</td>
+								<td>B</td>
+								<td>B/A</td>
+				      </tr>
+							<tr>
+                <td>2</td>
+                <td>3</td>
+                <td>1.5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>5</td>
+                <td>1.6666666......</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>8</td>
+                <td>1.6</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>13</td>
+                <td>1.625</td>
+              </tr>
+              <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+              </tr>
+              <tr>
+                <td>144</td>
+                <td>233</td>
+                <td>1.61805555...</td>
+              </tr>
+              
+              <tr>
+                <td>233</td>
+                <td>377</td>
+                <td>1.6180257...</td>
+              </tr>
+              <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+              </tr>
+            </table>
+            <p>We don't  have to start with <b>2 and 3</b>, here I randomly chose <b>192 and 16</b> (and got the sequence <i>192, 16, 208, 224, 432, 656, 1088, 1744, 2832, 4576, 7408, 11984, 19392, 31376, ...</i>):</p>
+            <table style="margin: auto;" >
+							<tr>
+								<td>A</td>
+								<td>B</td>
+								<td>B/A</td>
+				      </tr>
+							<tr>
+                <td>192</td>
+                <td>16</td>
+                <td>0.083333...</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>208</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>208</td>
+                <td>224</td>
+                <td>1.076923...</td>
+              </tr>
+              <tr>
+                <td>224</td>
+                <td>432</td>
+                <td>1.928571...</td>
+              </tr>
+              <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+              </tr>
+              <tr>
+                <td>7408</td>
+                <td>11984</td>
+                <td>1.617710...</td>
+              </tr>
+              
+              <tr>
+                <td>11984</td>
+                <td>19392</td>
+                <td>1.618157...</td>
+              </tr>
+              <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+              </tr>
+            </table>						
+						<h2>Other Names</h2><br>
+	          <p>The Golden Ratio is also sometimes called the  <b>golden section</b>,  <b>golden mean</b>, <b>golden number</b>,  <b>divine proportion</b>, <b>divine section</b> and <b>golden proportion</b>.</p><br><br>
+        </div>
+      </div>
+      <!-- Content ends here -->
+    </div>
+    <!-- Content box ends here -->
+    <!-- Footer starts from here -->
+    <footer>
+      <div class="inner-footer">
+          <div class="footer-item">
+              <h1>Golden Ratio</h1>
+              <p>
+                  It is one of the oldest mathematical concept that was 
+                  known about since the time of the Geeks.
+                  It has its applications in all aspects that you can think of.
+              </p>
+          </div>
+          <div class="footer-item">
+              <div class="2wspecial">
+                  <h2>Quick Links</h2>
+                  <div class="border"></div>
+                  <ul>
+                      <li><a href="homepage.html">Home</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="application.html">Application</a></li>
+                      <li><a href="quiz.html">Quiz</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-item">
+              <h2>Contact Us</h2>
+              <div class="border"></div>
+              <ul>
+                  <li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;TechnoStarks.com</li>
+              </ul>
+              <div class="social-media">
+                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </div>
+          </div> 
+      </div>
+      <div class="footer-bottom">
+          Copyright &copy; TechnoStarks 2020. All rights reserved.
+      </div>
+  </footer>
+  <!-- Footer ends here -->
+    
+  </body>
+</html>

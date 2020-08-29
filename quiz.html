@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dynamic Quiz Project</title>
+		<link type='text/css' rel='stylesheet' href='css/quiz.css'/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+        <!--navigation bar div-->
+    <div class="navigation">
+    	<ul>
+    		<li>
+    			<a href="homepage.html"><!--link of page to transfer-->
+    				<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+    				<span class="title">Home</span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="blog.html"><!--link of page to transfer-->
+    				<span class="icon"><i class="fa fa-th" aria-hidden="true"></i></span>
+    				<span class="title">Blog</span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="application.html"><!--link of page to transfer-->
+    				<span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+    				<span class="title">Application</span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="quiz.html"><!--link of page to transfer-->
+    				<span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+    				<span class="title">Quiz</span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="about.html"><!--link of page to transfer-->
+    				<span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+    				<span class="title">About us</span>
+    			</a>
+    		</li>
+    	</ul>
+	</div>
+
+    <!--mean menu tag-->
+    <div class="toggle" onclick="toggleMenu()"> </div>
+	<!-- Background image -->
+	<img src="images/1.jpg">
+	<!-- container for the quiz -->
+		<div id='container'>
+			<div id='title'>
+				<h1>Golden ratio</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+		</div>
+	<!-- Javascript links -->
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type='text/javascript' src='js/quiz.js'></script>
+	<!-- Javascript for navigation bar -->
+		<script type="text/javascript">
+			function toggleMenu() {
+				 let navigation = document.querySelector('.navigation')
+				 let toggle = document.querySelector('.toggle')
+				 navigation.classList.toggle('active');
+				 toggle.classList.toggle('active');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,407 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	background : #f4f4f4;
+
+	color:#555;
+	font-family: serif; 
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+
+}
+.container{
+    width:80%;
+    margin:auto;
+	overflow:hidden;
+}
+#main-header{
+	font-family: serif ;
+	background:#5c0099;
+    width:100%;
+	color: #fff;
+    text-align: center;
+    
+}
+#showcase{
+	background-image:url('../images/golden.jpg');
+	background-position: center right;
+	color : white;
+	min-height: 100px;
+	font-size:15px;
+    margin-bottom:30px;
+	text-align:center;
+}
+
+#showcase h1{
+	line-height: 1.6em;
+	padding:20px;
+}
+
+#main{
+	float:left;
+	width:70%;
+    
+	overflow:hidden;
+
+}
+#sidebar{
+	border:0.5px solid black ;
+	float:right;
+	width:30%;
+    box-sizing: border-box;
+    overflow:hidden;
+    padding:20px;
+}
+
+.team-section{
+	background:#d9d9d9;
+	text-align:center;
+}
+
+.inner-width{
+	max-width:1200px;
+	margin:auto;
+	padding:40px;
+    color:#333;
+    overflow:hidden;
+}
+
+.team-section h2{
+    font-size:20px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom:4px solid;
+	padding-bottom:10px;
+
+}
+.pers{
+	margin:auto;
+	padding:10px;
+}
+.pe{
+    margin: 20px;
+    float:left;
+    display: block;
+	width:29%;
+	overflow:hidden;
+	padding: 10px;
+	transition: 0.4s;
+	box-sizing:border-box;
+    height: 400px;
+}
+.pe:hover{
+	background:#8c8c8c;
+    box-shadow: 10px 10px 10px #7a8182,
+                -2px -2px 30px #7a8182;
+}
+.pe img{
+	width:200px;
+	height:200px; 
+    border-radius: 50%;
+}
+.p-name{
+	margin:16px 0;
+	text-transform:uppercase;
+}
+ 
+.p-sm{
+	margin-top:12px;
+}
+.p-sm a{
+	margin:0 4px;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	transition:0.4s;
+}
+.p-sm a:hover{
+transform:scale(1.3);
+}
+.p-sm a i{
+	color:#333;
+	line-height:30px;
+
+}
+
+.fa {
+  padding-top: 8px;
+  font-size: 5px;
+  text-align: center;
+  text-decoration:none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+ 
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* ----- Footer ----- */
+footer{
+    font-family: serif ;
+    margin-top:100px;
+    width:100%;
+    background: #00121b;
+    display:block;
+}
+.inner-footer{
+    width:95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-item{
+    width: 33%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+footer h1{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-item p{
+    color: grey;
+    font: 16px;
+    text-align:justify;
+    line-height: 25px;
+}
+footer h2{
+    margin: 10px 0;
+    color:grey;
+    font-size:16px;
+    font-weight: lighter;
+    text-transform:uppercase;
+}
+.border{
+    height: 2px;
+    width: 40px;
+    background: #ff9800;
+}
+footer ul{
+    list-style: none;
+    color:#fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+footer ul a{
+    text-decoration:none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+footer ul a:hover{
+    color: #ff9800;
+}
+footer ul li{
+    margin:10px;
+   
+    height:25px;
+}
+footer li i{
+    margin-right: 10px 0;
+}
+.social-media{
+    width:100%;
+    color:#fff;
+    text-align: center;
+}
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    height: 35px;
+    width:40px;
+    margin:20px 5px;
+    padding: 10px;
+    color:#fff;
+    border-radius: 50%;
+    border:1px solid grey;
+    transition: 0.3s;
+}
+.social-media i:hover{
+    background: grey;
+}
+.footer-bottom{
+    padding:20px;
+    background: #3d545f;
+    color: #fff;
+    font-size: 12px;
+    text-align:center;
+}
+.special{
+    padding-left:10%;
+}
+/* ----- Media Query for footer ----- */
+@media screen and (max-width: 1085px){
+    .footer-item{
+        width:50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer-item{
+        width:100%;
+    }
+}
+/* ----- Media Query for the content ----- */
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+	.pe{
+		width:100%;
+    }
+    #sidebar{
+        float:none;
+        width: 80%;
+        margin:auto;
+    }
+	
+}
+@media(min-width:601px) and (max-width:1100px){
+    .pe{
+        width:42%;
+    }
+}
+/* ----- Navigation Bar ----- */
+.navigation
+{
+	position:fixed;
+	width: 60px;
+	height: 100%;
+	background:rgba(22,3,28,0.4);
+	transition: 0.5s;
+	overflow: hidden;
+	z-index: 1000;
+
+}
+ 
+.navigation.active
+{
+	width: 300px;
+
+}
+.navigation ul
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+}
+.navigation ul li
+{
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+.navigation ul li:hover
+{
+	background-color: #e04f15;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon
+{
+	position: relative;
+	min-width: 60px;
+	height: 60px;
+	display: block;
+	line-height: 60px;
+	text-align: center;
+}
+.navigation ul li a .icon .fa
+{
+	font-size: 24px;
+
+}
+.navigation ul li a .title
+{
+    position: relative;
+	 padding: 0 10px;
+	height: 60px;
+	display: block;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+}
+.toggle 
+{
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	background-color: #2d2a2e;
+	cursor: pointer;
+	z-index: 1000;
+}
+.toggle.active
+{
+    background:#e04f15;
+	position: absolute;
+	z-index: 100;
+}
+.toggle:before
+{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	z-index: 100;
+
+}
+.toggle.active:before
+{
+	content: '\f00d';
+
+}
+/* ----- Media Query for navigation bar ----- */
+@media (max-width: 767px)
+{
+	.navigation
+	{
+		left:-60px;
+	}
+	.navigation.active
+	{
+		left: 0;
+		width: 100%;
+	}
+}
