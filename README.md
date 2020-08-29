@@ -7,17 +7,17 @@ Not only that it is visually very appealing as well, it has many animations as w
 
 # Technology Used
 
-  *HTML
+  * HTML
   
-  *Advance CSS'
+  * Advance CSS'
   
-  *JAVASCRIPT
+  * JAVASCRIPT
   
-  *J-QUERY 
+  * J-QUERY 
   
-  *Media Query
+  * Media Query
   
-  *BootStrap 4
+  * BootStrap 4
   
 # Author
 
