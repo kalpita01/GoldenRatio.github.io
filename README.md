@@ -9,7 +9,7 @@ Not only that it is visually very appealing as well, it has many animations as w
 
   * HTML
   
-  * Advance CSS'
+  * Advance CSS
   
   * JAVASCRIPT
   
